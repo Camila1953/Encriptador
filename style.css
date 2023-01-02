@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background: #001233;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #97b3db;
+    border-radius: 10px;
+}
+
+.container{
+    background: url(img/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+}
+
+.nav{
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+}
+
+.encrypt-box{
+    float: left;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5% 0% 0% 5%;
+}
+
+.text-area{
+    width: 97%;
+    height: auto;
+    margin: 20px 20px 20px 10px;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.text-area::-webkit-scrollbar{
+    width: 7px;
+}
+
+.text-area::-webkit-scrollbar-thumb{
+    background: #97b3db;
+    border-radius: 10px;
+}
+
+.encrypt-box p{
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+p img{
+    width: 20px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button button{
+    width: 15%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#btn_encrypt{
+    background: #0a38718c;
+    color: white;
+}
+
+#btn_encrypt:hover{
+    background: #d8dfe8ae;
+    color: black;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#btn_decrypt{
+    background: #d8dfe8ae;
+    color: black;
+    margin-left: 30px;
+}
+
+#btn_decrypt:hover{
+    background: #0a3871b9;
+    color: white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.result-box{
+    float: right;
+    width: 25%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 5% 5% 0% 0%;
+}
+
+.doll{
+    width: 50%;
+    height: auto;
+    margin: 10% 25%;
+}
+
+.text{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+.text2{
+    width: 80%;
+    height: 60%;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px 0px 30px;
+    margin: 20px 0px 20px 0px;
+    border: none;
+    outline: none;
+    background: transparent;
+    resize: none;
+}
+
+.text2::-webkit-scrollbar{
+    width: 7px;
+}
+
+.text2::-webkit-scrollbar-thumb{
+    background: #97b3db;
+    border-radius: 10px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button #copy{
+    width: 25%;
+    font-size: 15px;
+    padding-left: 6%;
+    color: white;
+    background: #0a38718c;
+    border: none;
+    border-radius: 15px;
+    display: none;
+}
+
+#copy:hover{
+    background: #d8dfe8ae;
+    color: black;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------- */
+/* ---------------- MEDIA QUERRY ---------------- */
+/* ---------------------------------------------- */
+
+@media (max-width: 1140px){
+    .text-area, .encrypt-box p{
+        font-size: 25px;
+    }
+
+    .button button{
+        width: 20%;
+    }
+
+    #btn_encrypt, #btn_decrypt{
+        font-size: 15px;
+    }
+
+    .text{
+        font-size: 27px;
+    }
+
+    .text2{
+        font-size: 20px;
+
+    }
+
+    .button #copy{
+        width: 32%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        height: 100%;
+    }
+
+    .nav h1{
+        font-size: 35px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .encrypt-box{
+        width: 92%;
+        height: 350px;
+        margin: 5% 0% 0% 3%;
+    }
+
+    .text-area{
+        height: 58%;
+    }
+
+    .button button{
+        width: 20%;
+    }
+
+    #btn_encrypt, #btn_decrypt{
+        font-size: 18px;
+    }
+
+    .result-box{
+        width: 94%;
+        height: 300px;
+        margin: 5% 0% 0% 3%;
+    }
+
+    .doll{
+        display: none;
+    }
+
+    .text{
+        font-size: 26px;
+    }
+
+    .text2{
+        width: 95%;
+        padding: 10px 20px;
+    }
+
+    .button #copy{
+        width: 21%;
+        font-size: 20px;
+        padding-left: 7%;
+    }
+}
+
+@media (max-width: 770px){
+    .nav h1{
+        font-size: 40px;
+    }
+
+    .button #copy{
+        width: 21%;
+        font-size: 21px;
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 640px){
+    .button button{
+        width: 25%;
+    }
+
+    #btn_encrypt, #btn_decrypt{
+        font-size: 20px;
+    }
+
+    .text2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 562px){
+    .nav h1{
+        font-size: 30px;
+    }
+
+    .encrypt-box{
+        width: 90%;
+    }
+
+    .button button{
+        width: 35%;
+    }
+
+    #btn_encrypt, #btn_decrypt{
+        font-size: 22px;
+    }
+
+    .button #copy{
+        width: 25%;
+        font-size: 23px;
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 520px){
+    .encrypt-box{
+        width: 88%;
+    }
+
+    .result-box{
+        width: 92%;
+    }
+}
+
+@media (max-width: 475px){
+    .nav h1{
+        font-size: 24px;
+    }
+
+    .text-area{
+        font-size: 20px;
+    }
+
+    .encrypt-box p{
+        font-size: 20px;
+    }
+
+    .button button{
+        width: 40%;
+    }
+
+    #btn_encrypt, #btn_decrypt{
+        font-size: 18px;
+    }
+
+    .text, .text2{
+        font-size: 20px;
+    }
+
+    .button #copy{
+        width: 27%;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 400px){
+    .encrypt-box{
+        width: 88%;
+    }
+
+    .text-area{
+        font-size: 18px;
+    }
+
+    .encrypt-box p{
+        font-size: 18px;
+    }
+
+    .button button{
+        width: 30%;
+    }
+
+    #btn_encrypt, #btn_decrypt{
+        font-size: 15px;
+    }
+
+    .result-box{
+        width: 93%;
+    }
+
+    .text, .text2{
+        font-size: 17px;
+    }
+}
